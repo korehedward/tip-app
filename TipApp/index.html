@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/TipApp/CSS/main.css">
+</head>
+<body>
+    <header id="header">
+        <h1>TIPR.</h1>
+        <input type="checkbox" class="mode" id="mode">
+    </header>
+    <div class="calculator" id="calculator">
+        <form class="billy" autocomplete="off">
+            <label for="bill">Bill</label><br>
+            <input type="text" id="bill">
+          
+        </form>
+        
+        <div class="amounts">
+            <button id="5percent">5%</button>
+            <button id="10percent">10%</button>
+            <button id="15percent">15%</button>
+            <button id="25percent">25%</button>
+            <button id="50percent">50%</button>
+            <div class="customTip">
+            <form autocomplete="off">
+                <input type="text" class="custom" id="custom" placeholder="Custom">
+                
+            </form>
+        </div>
+            
+        </div>
+        <div class="people">
+        <form autocomplete="off">
+            <label for="people">Number of People</label><br>
+            <input type="text" id="nr-people">
+        </form>
+        </div>
+    
+
+        <div class="card">
+            <p>Tip Amount <br> <span>/ person</span></p>
+            <h1 id="tip-amount">0</h1>
+            <p>Total <br> <span>/ person</span></p>
+            <h1 id="total">0</h1>
+        </div>
+    </div>
+
+
+
+    <script src="/TipApp/app.js"></script>
+</body>
+</html>

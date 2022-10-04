@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: #041026;
+}
+
+header {
+  color: white;
+  font-family: monospace;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #041026;
+  padding: 1.3em;
+  font-size: 1.8em;
+  letter-spacing: 0.5em;
+}
+
+header .mode {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  margin: 10px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  background-color: #041026;
+}
+
+header .mode::after {
+  content: "";
+  width: 60px;
+  height: 28px;
+  display: inline-block;
+  background: #00304d;
+  border-radius: 18px;
+  clear: both;
+}
+
+header .mode::before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  left: 24px;
+  top: 12.5px;
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .mode:checked::before {
+  left: 52px;
+  -webkit-box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .mode:checked::after {
+  background: #00304d;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.calculator {
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  background-color: #001630;
+  padding: 1em;
+}
+
+.calculator .amounts {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 12em auto;
+      grid-template-columns: 12em auto;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  gap: 1em;
+  padding-top: 2em;
+  padding-bottom: 3.6em;
+}
+
+.calculator .amounts button,
+.calculator .amounts input[type="submit"],
+.calculator .amounts input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  border-radius: 0.2em;
+}
+
+.calculator .amounts .custom {
+  text-align: center;
+  width: 7.5em;
+  line-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  border-radius: 0.2em;
+  border: none;
+}
+
+.calculator .amounts button:active {
+  background-color: #062b41;
+}
+
+.calculator .amounts button {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3.7em;
+  padding-right: 3.7em;
+  background-color: #00304d;
+  width: 5em;
+  line-height: 50px;
+  /* <- changed this */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.calculator form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.calculator .billy {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.calculator .billy input {
+  display: -ms-grid;
+  display: grid;
+  line-height: 50px;
+  width: 15em;
+}
+
+.calculator .people {
+  margin-top: 2em;
+}
+
+.calculator .people input {
+  display: -ms-grid;
+  display: grid;
+  line-height: 50px;
+  width: 15em;
+}
+
+.calculator .card {
+  color: white;
+  text-align: center;
+  background-color: #00304d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 3em;
+  display: grid;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  border-radius: 1em;
+}
+
+.calculator .card h1 {
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.calculator .card p {
+  font-family: monospace;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+input {
+  color: white;
+  background-color: #003150;
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: 2em;
+  border-radius: 0.2em;
+  border: none;
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+input::-webkit-input-placeholder {
+  color: #001630;
+}
+
+input:-ms-input-placeholder {
+  color: #001630;
+}
+
+input::-ms-input-placeholder {
+  color: #001630;
+}
+
+input::placeholder {
+  color: #001630;
+}
+
+label {
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.6em;
+  color: white;
+}
+
+span {
+  color: #0c696e;
+}
+/*# sourceMappingURL=main.css.map */
